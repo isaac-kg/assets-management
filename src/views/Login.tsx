@@ -1,8 +1,7 @@
-import React from "react";
-import { DatePicker } from "antd";
-import { Form, Input, Button, Typography } from "antd";
+import { FC } from "react";
+import { Input, Button, Typography } from "antd";
 
-const Login = () => {
+const Login:FC = () => {
   return (
     <div className="h-screen flex">
       <div className="w-6/12 bg-slate-200 hidden md:flex">

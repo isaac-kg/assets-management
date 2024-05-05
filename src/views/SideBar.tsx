@@ -12,7 +12,6 @@ import { Outlet, useNavigate } from "react-router-dom";
 const { Sider, Content } = Layout;
 
 const Sidebar: React.FC = () => {
-  const [collapsed, setCollapsed] = useState(false);
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState("Dashboard")
 
@@ -21,7 +20,7 @@ const Sidebar: React.FC = () => {
       <Sider
         trigger={null}
         collapsible
-        collapsed={collapsed}
+        collapsed={false}
         width={250}
         style={{
           overflow: "auto",

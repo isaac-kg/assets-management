@@ -1,21 +1,20 @@
 import { Modal } from "antd";
 import { FC, Fragment, ReactNode } from "react";
-import "./modal.scss"
+import "./modal.scss";
 
 interface CustomModalProps {
   isOpen: boolean;
   setIsOpen: (value: boolean) => void;
-  content: ReactNode,
-  title: any
+  content: ReactNode;
+  title: string;
 }
 
-const CustomModal:FC<CustomModalProps> = ({
-    isOpen = false,
-    setIsOpen,
-    content,
-    title =<div></div>
+const CustomModal: FC<CustomModalProps> = ({
+  isOpen = false,
+  setIsOpen,
+  content,
+  title,
 }) => {
-
   return (
     <Fragment>
       <Modal
@@ -26,7 +25,7 @@ const CustomModal:FC<CustomModalProps> = ({
         onOk={() => setIsOpen(false)}
         onCancel={() => setIsOpen(false)}
       >
-       {content}
+        {content}
       </Modal>
     </Fragment>
   );

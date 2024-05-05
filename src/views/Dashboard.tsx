@@ -1,6 +1,5 @@
 import React from "react";
-import { Button, Table, Typography } from "antd";
-import type { TableProps } from "antd";
+import {Typography } from "antd";
 import CustomPieChart from "./CustomPieChart";
 
 
