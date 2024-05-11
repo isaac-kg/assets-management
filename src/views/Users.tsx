@@ -3,6 +3,7 @@ import { Button, Table, Typography } from "antd";
 import type { TableProps } from "antd";
 import Register from "./Register";
 
+
 const Users = () => {
   interface DataType {
     key: string;
@@ -108,8 +109,6 @@ const Users = () => {
     <div className=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 p-4  mt-10">
         <div className="flex justify-between items-center mb-10">
         <Typography className="text-2xl">Latest Transactions</Typography>
-        {/* <Button type="primary">Create Users</Button>
-         */}
          <Register />
         </div>
       <Table columns={columns} dataSource={data} />
