@@ -1,5 +1,5 @@
-import React from "react";
-import { Button, Table, Typography } from "antd";
+import React, { useState } from "react";
+import { Button, Pagination, Table, Typography } from "antd";
 import type { TableProps } from "antd";
 import Register from "./Register";
 
@@ -82,28 +82,8 @@ const Users = () => {
       email: "johnbrown@gmail.com",
       cellNumber: "+27 524 224 4324",
     },
-    {
-      key: "2",
-      firstName: "Kendric",
-      lastName: "Lamar",
-      email: "kendricLamar@gmail.com",
-      cellNumber: "+27 123 456 789",
-    },
-    {
-        key: "1",
-        firstName: "John",
-        lastName: "Brown",
-        email: "johnbrown@gmail.com",
-        cellNumber: "+27 524 224 4324",
-      },
-      {
-        key: "2",
-        firstName: "Kendric",
-        lastName: "Lamar",
-        email: "kendricLamar@gmail.com",
-        cellNumber: "+27 123 456 789",
-      },
   ];
+
 
   return (
     <div className=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 p-4  mt-10">
@@ -111,7 +91,8 @@ const Users = () => {
         <Typography className="text-2xl">Latest Transactions</Typography>
          <Register />
         </div>
-      <Table columns={columns} dataSource={data} />
+      <Table columns={columns} dataSource={data} pagination={false} />
+      <Pagination className="text-right mt-6" defaultCurrent={1} total={50} />
     </div>
   );
 };

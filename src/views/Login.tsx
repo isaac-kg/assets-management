@@ -16,7 +16,7 @@ const Login:FC = () => {
 
       <div className="md:w-6/12 flex m-auto">
         <div className="w-96 m-auto px-10">
-          <Typography className="font-semibold text-2xl">Sign Up</Typography>
+          <Typography className="font-semibold text-2xl">Sign In</Typography>
           <Typography className="text-base mt-2 mb-8">
             Welcome to PWY Consulting assets management platform.
           </Typography>
@@ -31,7 +31,7 @@ const Login:FC = () => {
           <Typography className="text-right mt-2">Forgot Password?</Typography>
           <div className="mt-6">
             <Button type="primary" size="large" block>
-              Link Button
+              Sign In
             </Button>
           </div>
           <Typography className="mt-4 text-center text-base">
